@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+.expo/
+.expo-shared/
+web-build/
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+.env
+*.tsbuildinfo
+.expo-export/

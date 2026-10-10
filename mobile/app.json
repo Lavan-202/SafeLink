@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "SafeLink",
+    "slug": "safelink",
+    "scheme": "safelink",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#0E1730"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.safelink.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SafeLink uses your location to share it with trusted contacts during an SOS alert.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "SafeLink shares your live location with trusted contacts while an SOS alert is active."
+      }
+    },
+    "android": {
+      "package": "com.safelink.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "SEND_SMS"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SafeLink uses your location to alert trusted contacts during an emergency."
+        }
+      ],
+      "expo-localization",
+      "expo-sms"
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
